@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-50;
+}
+
+@layer components {
+    .header-links {
+        @apply text-gray-500 hover:text-main font-bold
+    }
+    .contact-info-side-menu {
+        @apply text-white flex items-center gap-2 px-10 py-4
+    }
+    .footer-section-titles {
+        @apply text-white capitalize pb-6 md:pt-6 sm:pt-6 xs:pt-6
+    }
+    .footer-section-content {
+        @apply text-[#cecece] pb-1
+    }
+    .top-section {
+        @apply bg-[url("/assets/images/slider1_slide2.jpg")] bg-cover bg-no-repeat py-40 w-full
+    }
+    .why-choose-us-card-1 {
+        @apply bg-[url('/assets/images/home1_1.jpg')] bg-cover bg-no-repeat
+    }
+    .why-choose-us-card-2 {
+        @apply bg-[url('/assets/images/home1_2.jpg')] bg-cover bg-no-repeat
+    }
+    .why-choose-us-card-3 {
+        @apply bg-[url('/assets/images/home1_3.jpg')] bg-cover bg-no-repeat
+    }
+    .request-for-quotation {
+        @apply bg-[url('/assets/images/pattern.jpg')] bg-cover bg-no-repeat
+    }
+    .about-top-section {
+        @apply bg-[url('/assets/images/slider1_slide1.jpg')] bg-cover bg-no-repeat py-40 w-full
+    }
+    /*.btn {*/
+    /*    @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-sm;*/
+    /*}*/
+}
