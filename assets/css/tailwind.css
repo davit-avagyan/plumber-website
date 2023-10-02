@@ -20,7 +20,7 @@ body {
         @apply text-[#cecece] pb-1
     }
     .top-section {
-        @apply bg-[url("/assets/images/slider1_slide2.jpg")] bg-cover bg-no-repeat py-40 w-full
+        @apply bg-[url("/assets/images/slider1_slide2.jpg")] bg-cover bg-center bg-no-repeat py-64 w-full
     }
     .why-choose-us-card-1 {
         @apply bg-[url('/assets/images/home1_1.jpg')] bg-cover bg-no-repeat
@@ -35,9 +35,39 @@ body {
         @apply bg-[url('/assets/images/pattern.jpg')] bg-cover bg-no-repeat
     }
     .about-top-section {
-        @apply bg-[url('/assets/images/slider1_slide1.jpg')] bg-cover bg-no-repeat py-40 w-full
+        @apply bg-[url('/assets/images/slider1_slide1.jpg')] bg-cover bg-center bg-no-repeat py-64 w-full
     }
-    /*.btn {*/
-    /*    @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-sm;*/
-    /*}*/
+    .services-top-section {
+        @apply bg-[url('/assets/images/slider1_slide3.jpg')] bg-cover bg-center bg-no-repeat py-64 w-full
+    }
+    .contact-top-section {
+        @apply bg-[url('/assets/images/slider1_slide4.jpg')] bg-cover bg-center bg-no-repeat py-64 w-full
+    }
+    .card {
+        @apply bg-gray-200 text-gray-800 shadow-2xl rounded overflow-hidden
+    }
+    .card-image {
+        /*@apply */
+    }
+    .card-body {
+        @apply px-3 py-5
+    }
+    .card-title {
+        @apply font-semibold mb-2 md:text-2xl
+    }
+    .card-description {
+        @apply md:text-xl
+    }
+    .card-actions {
+        @apply px-3 py-5 flex justify-between
+    }
+    .action-btn {
+        @apply bg-[#4b5563] text-white px-6 py-2 rounded-md left-auto text-sm hover:bg-[#c8c8c8] hover:text-[#374143]
+    }
+    .action-submit-btn {
+        @apply bg-green-800 text-white px-6 py-2 rounded-md left-auto text-sm hover:bg-[#c8c8c8] hover:text-[#374143]
+    }
+    .contact-main-info {
+        @apply flex gap-3 text-white items-center hover:text-main
+    }
 }

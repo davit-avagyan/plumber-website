@@ -1,6 +1,6 @@
 <template>
   <div>
-    <footer class="shadow-sm bg-[#3c414c] py-24">
+    <footer class="shadow-sm bg-[#3c414c] py-24 text-2xl">
       <div class="md:container mx-auto grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 xs:px-5 gap-4">
         <div class="flex flex-col">
           <p class="footer-section-titles">Om oss</p>
