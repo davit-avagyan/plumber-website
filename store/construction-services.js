@@ -1,4 +1,6 @@
 import { defineStore } from "pinia"
+import { constructionImages } from "~/enums/construction-images"
+import TotalRenovation from "assets/images/construction/total-renovation.jpg";
 
 export const useConstructingServicesStore = defineStore('constructingServicesStore', {
   state: () => ({
@@ -9,7 +11,7 @@ export const useConstructingServicesStore = defineStore('constructingServicesSto
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, voluptate.',
         paymentInfo: 'Priset är efter ROT. Bilframkörning på 295 kr tillkommer. Önskas bortforsling tillkommer 395 kr.',
         price: 'Price By Phone',
-        image: 'construction/bathroom-renovation.jpg'
+        image: constructionImages.BathroomRenovation
       },
       {
         id: 2,
@@ -17,7 +19,7 @@ export const useConstructingServicesStore = defineStore('constructingServicesSto
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, voluptate.',
         paymentInfo: 'Priset är efter ROT. Bilframkörning på 295 kr tillkommer. Önskas bortforsling tillkommer 395 kr.',
         price: 'Price By Phone',
-        image: 'construction/kitchen-renovation.jpg'
+        image: constructionImages.KitchenRenovation
       },
       {
         id: 3,
@@ -25,7 +27,7 @@ export const useConstructingServicesStore = defineStore('constructingServicesSto
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, voluptate.',
         paymentInfo: 'Priset är efter ROT. Bilframkörning på 295 kr tillkommer. Önskas bortforsling tillkommer 395 kr.',
         price: 'Price By Phone',
-        image: 'construction/total-renovation.jpg'
+        image: constructionImages.TotalRenovation
       }
     ]
   }),

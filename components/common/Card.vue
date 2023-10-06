@@ -10,7 +10,7 @@
     >
       <div class="card-image">
 <!--        <img v-if="!service.image" src="@/assets/images/home1_1.jpg" alt="service image">-->
-        <img :src="`_nuxt/assets/images/${service.image}`" alt="service image" class="w-full h-52">
+        <img :src="service.image" alt="service image" class="w-full h-52">
       </div>
       <div class="card-body">
         <h2 class="card-title">{{ service.name }}</h2>
