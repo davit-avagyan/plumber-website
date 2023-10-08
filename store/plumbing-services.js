@@ -1,21 +1,9 @@
 import { defineStore } from "pinia"
-import { plumberImages } from "~/enums/plumber-images";
-import HeatingSystem from "assets/images/services/heating-system.jpg";
-import Bathroom from "assets/images/services/bathroom.jpg";
-import Kitchen from "assets/images/services/kitchen.jpg";
-import WaterMeter from "assets/images/services/water-meter.jpg";
+import { plumberImages } from "~/enums/plumber-images"
 
 export const usePlumberServicesStore = defineStore('plumberServicesStore', {
   state: () => ({
     services: [
-      {
-        id: 1,
-        name: 'VVS tjänster',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, voluptate.',
-        paymentInfo: 'Priset är efter ROT. Bilframkörning på 295 kr tillkommer. Önskas bortforsling tillkommer 395 kr.',
-        price: '50 EUR',
-        image: plumberImages.PlumbingService
-      },
       {
         id: 2,
         name: 'Stambyte',
@@ -47,20 +35,6 @@ export const usePlumberServicesStore = defineStore('plumberServicesStore', {
         paymentInfo: 'Priset är efter ROT. Bilframkörning på 295 kr tillkommer. Önskas bortforsling tillkommer 395 kr.',
         price: '50 EUR',
         image: plumberImages.Sink
-      },
-      {
-        id: 6,
-        name: 'Rörmokare',
-        description: 'Stressa inte över VVS-problem - låt våra auktoriserade rörmokare i Stockholm hjälpa dig',
-        paymentInfo: 'Priset är efter ROT. Bilframkörning på 295 kr tillkommer. Önskas bortforsling tillkommer 395 kr.',
-        price: '50 EUR'
-      },
-      {
-        id: 7,
-        name: 'ROT och RUT Avdrag',
-        description: 'Auktoriserade VVS-tjänster med ROT & RUT Avdrag | Säkra Rör & Bygg',
-        paymentInfo: 'Priset är efter ROT. Bilframkörning på 295 kr tillkommer. Önskas bortforsling tillkommer 395 kr.',
-        price: '50 EUR'
       },
       {
         id: 8,

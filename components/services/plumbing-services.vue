@@ -2,7 +2,7 @@
   <div
     class="pt-16 text-white flex flex-col gap-16 items-center"
   >
-    <h2 class="text-5xl">VVS</h2>
+    <h2 class="text-5xl">VVS tjänster</h2>
     <CommonCard :services="services" />
   </div>
 </template>
