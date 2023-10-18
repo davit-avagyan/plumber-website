@@ -34,7 +34,7 @@ export const usePlumberServicesStore = defineStore('plumberServicesStore', {
         description: 'Sluta oroa dig för ett gammalt handfat - låt oss byta det åt dig',
         paymentInfo: 'Priset är efter ROT. Bilframkörning på 295 kr tillkommer. Önskas bortforsling tillkommer 395 kr.',
         price: '50 EUR',
-        image: plumberImages.Sink
+        image: plumberImages.BathroomSink
       },
       {
         id: 8,
@@ -50,7 +50,7 @@ export const usePlumberServicesStore = defineStore('plumberServicesStore', {
         description: 'Behöver du installera eller byta din varmvattenberedare? Lita på Säkra Rör!',
         paymentInfo: 'Priset är efter ROT. Bilframkörning på 295 kr tillkommer. Önskas bortforsling tillkommer 395 kr.',
         price: '50 EUR',
-        image: plumberImages.WaterBoiler
+        image: plumberImages.WaterBoilerNew
       },
       {
         id: 10,
@@ -81,7 +81,8 @@ export const usePlumberServicesStore = defineStore('plumberServicesStore', {
         name: 'Byta element',
         description: 'Ska du installera nya element eller byta ut befintliga? Lita på Säkra Rör för pålitliga lösningar!',
         paymentInfo: 'Priset är efter ROT. Bilframkörning på 295 kr tillkommer. Önskas bortforsling tillkommer 395 kr.',
-        price: '50 EUR'
+        price: '50 EUR',
+        image: plumberImages.Radiator
       },
       {
         id: 14,
