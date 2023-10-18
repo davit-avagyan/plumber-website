@@ -1,4 +1,5 @@
-import PlumbingService from '@/assets/images/services/plumbing-service.jpg'
+// import PlumbingService from '@/assets/images/services/plumbing-service.jpg'
+import PlumbingService from '~/assets/images/services/plumbing-service.jpg'
 import WaterPipes from '@/assets/images/services/water-pipes.jpg'
 import Services from '@/assets/images/services/services.jpg'
 import Installation from '@/assets/images/services/installation.jpg'
