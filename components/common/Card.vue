@@ -15,7 +15,7 @@
       <div class="card-body">
         <h2 class="card-title">{{ service.name }}</h2>
         <p class="card-description">{{ service.description }}</p>
-        <p class="card-description font-semibold">{{ service.paymentInfo }}</p>
+<!--        <p class="card-description font-semibold">{{ service.paymentInfo }}</p>-->
       </div>
       <div class="card-actions">
         <p class="font-bold text-xl">{{ service.price }}</p>
