@@ -1,0 +1,1 @@
+import{N as t,c as e,t as a,l as o,o as r}from"./entry.e971fd2a.js";const l={__name:"[id]",setup(c){const{id:s}=t().params;return(n,u)=>(r(),e("h1",null,"Products id is "+a(o(s)),1))}};export{l as default};
