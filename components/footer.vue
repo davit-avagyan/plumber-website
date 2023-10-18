@@ -13,7 +13,7 @@
         <div class="flex flex-col">
           <p class="footer-section-titles">Tjänster</p>
           <NuxtLink to="/services" class="footer-section-content hover:text-main">VVS</NuxtLink>
-          <NuxtLink to="/services" class="footer-section-content hover:text-main">Bygg</NuxtLink>
+<!--          <NuxtLink to="/services" class="footer-section-content hover:text-main">Bygg</NuxtLink>-->
         </div>
         <div class="flex flex-col">
           <p class="footer-section-titles">Offertförfrågan</p>
@@ -29,11 +29,11 @@
         </div>
         <div class="flex flex-col">
           <p class="footer-section-titles">Certifieringar</p>
-          <img src="../assets/images/logo-1.png" class="w-[100px] h-[100px] rounded-full">
+          <img src="@/assets/images/logo-1.png" class="w-[100px] h-[100px] rounded-full" alt="certificate logo">
         </div>
         <div class="flex flex-col">
           <p class="footer-section-titles">Trygg Hansa Försäkrar</p>
-          <img src="../assets/images/Trygg-Hansa-Logo.png" class="w-[200px] h-[100px] rounded-md ">
+          <img src="@/assets/images/Trygg-Hansa-Logo.png" class="w-[200px] h-[100px] rounded-md" alt="Trygg-Hansa-Logo">
         </div>
       </div>
     </footer>

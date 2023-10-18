@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto my-7 flex flex-col gap-20">
     <ServicesPlumbingServices />
-    <ServicesConstructionServices />
+<!--    <ServicesConstructionServices />-->
   </div>
 </template>
 

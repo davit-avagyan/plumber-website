@@ -2,7 +2,7 @@
   <div class="top-section flex flex-col items-center text-white gap-4 relative text-center">
   </div>
   <div class="flex flex-col items-center text-white gap-4 relative text-center my-10">
-    <img src="../../assets/images/logo-1.png" class="w-[100px] h-[100px] absolute right-5 bottom-5 rounded-full">
+    <img src="@/assets/images/logo-1.png" class="w-[100px] h-[100px] absolute right-5 bottom-5 rounded-full" alt="certificate logo">
     <span class="text-2xl md:text-3xl uppercase">AM VVS i Stockholm</span>
     <h1 class="text-2xl md:text-3xl uppercase">Våra erfarna medarbetare är vår garanti på ett väl utfört arbete.</h1>
     <!--    <h2 class="text-2xl md:text-5xl">our team is ready for it</h2>-->
