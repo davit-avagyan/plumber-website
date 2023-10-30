@@ -1,8 +1,10 @@
 <template>
   <div>
-    <header class="shadow-sm bg-gray-100">
-      <nav class="md:container mx-auto p-4 flex justify-between">
-        <NuxtLink to="/" class="header-links">Ninja Logo</NuxtLink>
+    <header class="shadow-sm bg-gray-500">
+      <nav class="md:container mx-auto flex justify-between items-center">
+        <NuxtLink to="/" class="header-links">
+          <img src="@/assets/images/logo.jpg" alt="logo" class="w-52 h-24">
+        </NuxtLink>
         <ul class="hidden lg:flex gap-4">
           <li
             v-for="m in menu"

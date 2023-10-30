@@ -9,27 +9,44 @@
       class="card"
     >
       <div class="card-image">
-<!--        <img v-if="!service.image" src="@/assets/images/home1_1.jpg" alt="service image">-->
-        <img :src="service.image" alt="service image" class="w-full h-52">
+        <img :src="service.image" alt="service image" class="w-full h-60">
       </div>
       <div class="card-body">
         <h2 class="card-title">{{ service.name }}</h2>
         <p class="card-description">{{ service.description }}</p>
-<!--        <p class="card-description font-semibold">{{ service.paymentInfo }}</p>-->
       </div>
       <div class="card-actions">
-        <p class="font-bold text-xl">{{ service.price }}</p>
-        <button class="action-btn transition-background-color ease-in-out delay-150 duration-300">Läs mer</button>
+<!--        <p class="font-bold text-xl">{{ service.price }}</p>-->
+        <button
+          @click="openModal(service)"
+          class="action-btn transition-background-color ease-in-out delay-150 duration-300"
+        >
+          Boka
+        </button>
       </div>
     </div>
   </div>
+  <ModalsFormForOrder v-if="modalOpen" :service="serviceForModal" @close="closeModal" />
 </template>
 
 <script setup>
-const { services } = defineProps({
+const {services} = defineProps({
   services: {
     type: Array,
     required: true
   }
 })
+
+const modalOpen = ref(false)
+const serviceForModal = ref({})
+
+const openModal = service => {
+  modalOpen.value = true
+  serviceForModal.value = service
+}
+
+const closeModal = () => {
+  modalOpen.value = false
+  serviceForModal.value = {}
+}
 </script>

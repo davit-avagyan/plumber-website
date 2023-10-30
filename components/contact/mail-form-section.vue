@@ -8,7 +8,7 @@
             :class="{'!text-red-300': errors.firstName}"
             for="grid-first-name"
           >
-            First Name *
+            FÖRNAMN *
           </label>
           <input
             v-bind="firstName"
@@ -25,7 +25,7 @@
             class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
             :class="{'!text-red-300': errors.lastName}"
             for="grid-last-name">
-            Last Name *
+            Efternamn *
           </label>
           <input
             v-bind="lastName"
@@ -45,7 +45,7 @@
             :class="{'!text-red-300': errors.email}"
             for="grid-email"
           >
-            Email *
+            E-postadress *
           </label>
           <input
             v-bind="email"
@@ -65,7 +65,7 @@
             :class="{'!text-red-300': errors.phone}"
             for="grid-phone"
           >
-            Phone *
+            Telefonnummer *
           </label>
           <input
             v-bind="phone"
@@ -85,7 +85,7 @@
             :class="{'!text-red-300': errors.message}"
             for="grid-message"
           >
-            Message *
+            Ytterligare information *
           </label>
           <textarea
             v-bind="message"

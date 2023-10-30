@@ -1,11 +1,12 @@
 <template>
   <div>
     <footer class="shadow-sm bg-[#3c414c] py-24 text-2xl">
-      <div class="md:container mx-auto grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 xs:px-5 gap-4">
+      <div class="md:container mx-auto grid  md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 xs:px-5 gap-4">
         <div class="flex flex-col">
           <p class="footer-section-titles">Om oss</p>
-<!--          //TODO should be logo-->
-          <NuxtLink to="/" class="">Ninja Logo</NuxtLink>
+          <NuxtLink to="/" class="">
+            <img src="@/assets/images/logo.jpg" alt="logo" class="w-52 h-24">
+          </NuxtLink>
           <p class="footer-section-content">{{ contact.address }}</p>
           <NuxtLink :to="`mailto:${contact.email}`" class="footer-section-content hover:text-main">{{ contact.email }}</NuxtLink>
           <NuxtLink :to="`tel:${contact.phone}`" class="footer-section-content hover:text-main">{{ contact.phone }}</NuxtLink>

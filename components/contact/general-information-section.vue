@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col gap-6 md:gap-10 text-white">
-    <p class="text-xl md:text-2xl">If you have any questions or comments about our services contact us using the form and we be sure to get back to you.</p>
+    <p class="text-xl md:text-2xl">Om du har några frågor eller funderingar om våra tjänster kontakta oss via formuläret så återkommer vi inom 24 timmar  till dig.</p>
     <div class="flex flex-col gap-2 md:gap-5">
       <div class="contact-main-info">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
