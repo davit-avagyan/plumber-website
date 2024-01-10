@@ -20,7 +20,7 @@ body {
         @apply text-[#cecece] pb-1
     }
     .top-section {
-        @apply bg-[url("/assets/images/slider1_slide2.jpg")] bg-cover bg-center bg-no-repeat py-64 w-full
+        @apply bg-[url("/assets/images/slider1_slide2.jpg")] bg-cover bg-center bg-no-repeat xs:py-20 md:py-64 w-full
     }
     .why-choose-us-card-1 {
         @apply bg-[url('/assets/images/home1_1.jpg')] bg-cover bg-no-repeat
@@ -35,13 +35,13 @@ body {
         @apply bg-[url('/assets/images/pattern.jpg')] bg-cover bg-no-repeat
     }
     .about-top-section {
-        @apply bg-[url('/assets/images/slider1_slide1.jpg')] bg-cover bg-center bg-no-repeat py-64 w-full
+        @apply bg-[url('/assets/images/slider1_slide1.jpg')] bg-cover bg-center bg-no-repeat xs:py-20 md:py-64 w-full
     }
     .services-top-section {
-        @apply bg-[url('/assets/images/slider1_slide3.jpg')] bg-cover bg-center bg-no-repeat py-64 w-full
+        @apply bg-[url('/assets/images/slider1_slide3.jpg')] bg-cover bg-center bg-no-repeat xs:py-20 md:py-64 w-full
     }
     .contact-top-section {
-        @apply bg-[url('/assets/images/slider1_slide4.jpg')] bg-cover bg-center bg-no-repeat py-64 w-full
+        @apply bg-[url('/assets/images/slider1_slide4.jpg')] bg-cover bg-center bg-no-repeat xs:py-20 md:py-64 w-full
     }
     .card {
         @apply bg-gray-200 text-gray-800 shadow-2xl rounded overflow-hidden relative

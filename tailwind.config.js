@@ -4,8 +4,8 @@ module.exports = {
     extend: {
       colors: {
         "main": "#1bbde8",
-        "side-main-bg": "#20c7ca",
-        "side-main-bg-hover": "#1db3b5"
+        "side-main-bg": "#1a73e8",
+        "side-main-bg-hover": "#fff"
       }
     },
     screens: {

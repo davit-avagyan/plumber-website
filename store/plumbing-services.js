@@ -4,13 +4,13 @@ import { plumberImages } from "~/enums/plumber-images"
 export const usePlumberServicesStore = defineStore('plumberServicesStore', {
   state: () => ({
     services: [
-      {
-        id: 1,
-        name: 'Stambyte',
-        description: 'Ett stambyte är en omfattande renovering av VVS-systemet i din byggnad. Det inkluderar utbyte av avloppsrör, vattenledningar och ibland även värmesystem. Ett stambyte är avgörande för att säkerställa att din byggnads VVS-system fungerar effektivt och att du undviker framtida problem. Kontakta oss för professionell rådgivning och utförande av stambyten i Stockholm med hög kvalitet och lång erfarenhet.',
-        price: '',
-        image: plumberImages.WaterPipes
-      },
+      // {
+      //   id: 1,
+      //   name: 'Stambyte',
+      //   description: 'Ett stambyte är en omfattande renovering av VVS-systemet i din byggnad. Det inkluderar utbyte av avloppsrör, vattenledningar och ibland även värmesystem. Ett stambyte är avgörande för att säkerställa att din byggnads VVS-system fungerar effektivt och att du undviker framtida problem. Kontakta oss för professionell rådgivning och utförande av stambyten i Stockholm med hög kvalitet och lång erfarenhet.',
+      //   price: '',
+      //   image: plumberImages.WaterPipes
+      // },
       {
         id: 2,
         name: 'Service',
@@ -18,20 +18,20 @@ export const usePlumberServicesStore = defineStore('plumberServicesStore', {
         price: '',
         image: plumberImages.Services
       },
-      {
-        id: 3,
-        name: 'Installation',
-        description: 'Våra VVS-installationstjänster är ledande inom branschen. Med expertis inom VVS-design och installation är vi din pålitliga partner för projekt av alla storlekar. Vi erbjuder skräddarsydda lösningar för VVS-installationer som passar dina behov. Kontakta oss för professionell och effektiv VVS-installation som ger långvarig prestanda och kvalitet.',
-        price: '',
-        image: plumberImages.Installation
-      },
-      {
-        id: 4,
-        name: 'Byta handfat',
-        description: 'Vi är experter på att byta handfat. Våra handfatinstallationstjänster är snabba och prisvärda. Lita på oss för professionellt handfatsbyte med hög kvalitet och utmärkt utförande. Kontakta oss för en smidig och effektiv handfatsinstallation idag.',
-        price: '',
-        image: plumberImages.BathroomSink
-      },
+      // {
+      //   id: 3,
+      //   name: 'Installation',
+      //   description: 'Våra VVS-installationstjänster är ledande inom branschen. Med expertis inom VVS-design och installation är vi din pålitliga partner för projekt av alla storlekar. Vi erbjuder skräddarsydda lösningar för VVS-installationer som passar dina behov. Kontakta oss för professionell och effektiv VVS-installation som ger långvarig prestanda och kvalitet.',
+      //   price: '',
+      //   image: plumberImages.Installation
+      // },
+      // {
+      //   id: 4,
+      //   name: 'Byta handfat',
+      //   description: 'Vi är experter på att byta handfat. Våra handfatinstallationstjänster är snabba och prisvärda. Lita på oss för professionellt handfatsbyte med hög kvalitet och utmärkt utförande. Kontakta oss för en smidig och effektiv handfatsinstallation idag.',
+      //   price: '',
+      //   image: plumberImages.BathroomSink
+      // },
       // {
       //   id: 5,
       //   name: 'Byta blandare',
@@ -43,7 +43,7 @@ export const usePlumberServicesStore = defineStore('plumberServicesStore', {
         id: 6,
         name: 'Varmvattenberedare',
         description: 'Behöver du installera eller byta en varmvattenberedare? Vi är experter på varmvattenberedare och erbjuder pålitliga installations- och utbyteslösningar. Vårt team av professionella tekniker säkerställer att din varmvattenberedare fungerar effektivt. Kontakta oss för expertservice och högkvalitativa varmvattenberedare till konkurrenskraftiga priser.',
-        price: '',
+        price: '5990 kr',
         image: plumberImages.WaterBoilerNew
       },
       {
@@ -53,13 +53,13 @@ export const usePlumberServicesStore = defineStore('plumberServicesStore', {
         price: '2550 kr',
         image: plumberImages.BathroomCommode
       },
-      {
-        id: 8,
-        name: 'Värme',
-        description: 'Oavsett vilken uppvärmningsmetod du väljer, är det viktigt att ha en effektiv och professionell installation samt regelbunden underhåll. Dessutom kan våra experter  inom VVS och uppvärmning hjälpa dig att optimera ditt system för att spara energi och minska kostnaderna.',
-        price: '',
-        image: plumberImages.HeatingSystem
-      },
+      // {
+      //   id: 8,
+      //   name: 'Värme',
+      //   description: 'Oavsett vilken uppvärmningsmetod du väljer, är det viktigt att ha en effektiv och professionell installation samt regelbunden underhåll. Dessutom kan våra experter  inom VVS och uppvärmning hjälpa dig att optimera ditt system för att spara energi och minska kostnaderna.',
+      //   price: '',
+      //   image: plumberImages.HeatingSystem
+      // },
       {
         id: 9,
         name: 'VVS Badrum',
@@ -114,21 +114,21 @@ export const usePlumberServicesStore = defineStore('plumberServicesStore', {
         name: 'Vattenmätarkonsol',
         description: 'En vattenmätarkonsol är en avgörande del av vattenhanteringen i ditt hem. Med vår expertis inom "vattenmätarkonsol" kan du säkerställa noggrann mätning och kontroll av din vatten användning.\n' +
           'För att säkerställa att din vattenmätning är korrekt och effektiv, kontakta oss idag för att diskutera dina behov av vattenmätarkonsol.',
-        price: '',
+        price: '6990 kr',
         image: plumberImages.WaterMeter
       },
-      {
-        id: 14,
-        name: 'Vatten och avlopp',
-        description: 'Effektiv hantering av vatten och avlopp är avgörande för ditt hem.\n' +
-          'Våra tjänster inkluderar:\n' +
-          '- Installation och underhåll av VVS-system\n' +
-          '- Effektiva vatten- och avloppslösningar\n' +
-          '- Expertis inom reparation och rengöring\n' +
-          'Kontakta oss idag för att diskutera dina behov gällande vatten och avlopp.',
-        price: '',
-        image: plumberImages.WaterAndSewer
-      },
+      // {
+      //   id: 14,
+      //   name: 'Vatten och avlopp',
+      //   description: 'Effektiv hantering av vatten och avlopp är avgörande för ditt hem.\n' +
+      //     'Våra tjänster inkluderar:\n' +
+      //     '- Installation och underhåll av VVS-system\n' +
+      //     '- Effektiva vatten- och avloppslösningar\n' +
+      //     '- Expertis inom reparation och rengöring\n' +
+      //     'Kontakta oss idag för att diskutera dina behov gällande vatten och avlopp.',
+      //   price: '',
+      //   image: plumberImages.WaterAndSewer
+      // },
       {
         id: 15,
         name: 'Tvättmaskin',

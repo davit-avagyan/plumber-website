@@ -12,7 +12,7 @@
     >
       <div class="text-center">
         <slot>
-          <strong>Upload File</strong>
+          <strong>Ladda upp bild</strong>
         </slot>
         <small v-if="files.length" class="text-gray-600 block">
           <slot name="file" :files="files" :uploadInfo="uploadInfo">

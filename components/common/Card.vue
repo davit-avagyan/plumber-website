@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="services.length"
-    class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10"
+    class="grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:px-4"
   >
     <div
       v-for="service in services"
@@ -13,10 +13,14 @@
       </div>
       <div class="card-body">
         <h2 class="card-title">{{ service.name }}</h2>
-        <p class="card-description">{{ service.description }}</p>
+        <p
+          class="card-description"
+        >
+          {{ service.description }}
+        </p>
       </div>
       <div class="card-actions">
-<!--        <p class="font-bold text-xl">{{ service.price }}</p>-->
+        <p v-if="service.price" class="font-bold text-xl">{{ service.price }}</p>
         <button
           @click="openModal(service)"
           class="action-btn transition-background-color ease-in-out delay-150 duration-300"

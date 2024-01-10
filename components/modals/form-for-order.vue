@@ -1,7 +1,14 @@
 <template>
   <div class="modal-overlay" @click="closeModal"></div>
 
-  <div class="modal">
+  <div v-if="true" class="modal max-w-300 h-fit text-black font-semibold text-center">
+    Kontaktformuläret är under förberedelse! <br>
+    Nu kan du kontakta via e-post eller telefonnummer. <br>
+    Vi ber om din förlåtelse!
+  </div>
+  <div v-else class="modal max-w-300">
+    <h2 class="text-gray-400 font-bold mb-2 text-xl">Priset är efter ROT. Bilframkörning på 250 kr tillkommer.</h2>
+    <h2 class="text-gray-400 font-bold mb-2 text-xl">Önskas bortforsling tillkommer 350 kr.</h2>
     <h2 class="text-gray-400 font-bold mb-2 text-xl">{{ serviceText }}</h2>
     <h2 class="text-gray-400 font-bold mb-7 text-xl">{{ priceInfo }}</h2>
     <form @submit.prevent="sendEmail" class="w-full max-w-lg">
@@ -170,7 +177,7 @@
         </div>
       </div>
       <div class="flex justify-end">
-        <button type="submit" class="action-submit-btn">Send</button>
+        <button type="submit" class="action-submit-btn">Skicka</button>
       </div>
     </form>
   </div>
@@ -184,11 +191,11 @@ import {useFetch} from "#app"
 const {service} = defineProps({
   service: {
     type: Object,
-    required: true
+    default: () => {}
   }
 })
-const serviceText = computed(() => `The service that you interested in is ${service.name}`)
-const priceInfo = computed(() => service.price ? `The price for chosen service starting from ${service.price}` : 'For price please contact to us!')
+const serviceText = computed(() => service ? `Tjänsten du är intresserad av är ${service.name}` : '')
+const priceInfo = computed(() => service ? service.price ? `Priset för vald tjänst från och med ${service.price}` : 'För pris vänligen kontakta oss!' : '')
 const requiredDateOptions = ref([
   {id: 1, value: 'asap', text: 'Så snart som möjligt'},
   {id: 2, value: 'within-a-week', text: 'Inom en vecka'},

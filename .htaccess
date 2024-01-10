@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Handle requests to the /_nuxt folder
+  RewriteRule ^_nuxt - [L]
+
+  # Handle requests to the /api folder
+  RewriteRule ^server/api - [L]
+
+  # Handle all other requests
+  RewriteRule ^(.*)$ index.html [QSA,L]
+</IfModule>

@@ -9,6 +9,9 @@ export default defineNuxtConfig({
       },
     ],
   },
+  router: {
+    base: '/',
+  },
   modules: [
     '@nuxtjs/tailwindcss',
     [

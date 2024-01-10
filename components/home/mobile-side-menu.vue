@@ -12,8 +12,14 @@
               v-for="m in menu"
               :key="m.path"
               :to="m.path"
-              class="py-4 px-10 text-sm text-[#1ba0a2] font-semibold hover:bg-side-main-bg-hover border-b-2 border-side-main-bg-hover hover:text-white"
+              class="py-4 px-10 text-sm text-white font-semibold hover:bg-side-main-bg-hover hover:text-main border-b-2 border-side-main-bg-hover"
             >{{ m.title }}</NuxtLink>
+            <button
+              @click="openModal"
+              class="mt-2 header-links bg-[#3c414c] rounded-xl py-2 px-4 text-white uppercase font-semibold text-center transition-background-color ease-in-out delay-150 duration-300 hover:bg-black"
+            >
+              Gratis offert
+            </button>
           </div>
           <div class="pt-5">
             <div class="contact-info-side-menu">
@@ -45,6 +51,7 @@
       </div>
     </Transition>
   </div>
+  <ModalsFormForOrder v-if="modalOpen" @close="closeModal" />
 </template>
 
 <script setup>
@@ -58,11 +65,21 @@ const store = useIsSidebarOpen()
 const { isOpen } = storeToRefs(store)
 const toggleSideMenu = () => store.toggleSidebar()
 
+const modalOpen = ref(false)
+
+const openModal = service => {
+  modalOpen.value = true
+}
+
+const closeModal = () => {
+  modalOpen.value = false
+}
+
 </script>
 
 <style scoped>
 .router-link-exact-active {
-  background-color: #1a9fa2;
+  background-color: #809494;
   color: #fff;
 }
 </style>

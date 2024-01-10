@@ -93,7 +93,7 @@
             :class="{'mb-3 border-red-300': errors.message}"
             id="grid-message"
             type="tel"
-            placeholder="Type here...."
+            placeholder="Meddelande här..."
           />
           <p class="text-red-300">{{ errors.message }}</p>
         </div>
